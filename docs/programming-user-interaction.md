@@ -22,7 +22,7 @@ De afgelopen vier sprints heb je voornamelijk gewerkt met HTML en CSS. Met HTML 
 Het _inspecteren_ van elementen heb je dus al vaak gedaan. Als je in de Inspector een element selecteert, krijg je hier in de Console een referentie heen, via een _variabele_ genaamd `$0`. Je kunt hiermee de DOM onderzoeken.
 
 
-### Opdrachten
+### Opdrachtenn
 
 Ga in de browser naar je eigen project, open de Console en schrijf op het whiteboard uit hoeveel elementen de pagina waar je aan werkt bestaat. Dit kun je doen door `document.querySelectorAll('*').length` uit te voeren.
 
