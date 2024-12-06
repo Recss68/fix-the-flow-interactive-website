@@ -25,6 +25,11 @@ body {
     height: 50px;
 }
 
+.toggleButton:hover {
+    background-color: grey;
+    transition: ease-in 0.2s;
+}
+
 .verborgen {
     display: none;
 }
