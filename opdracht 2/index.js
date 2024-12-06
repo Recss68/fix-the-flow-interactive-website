@@ -1,16 +1,18 @@
 // Haalt de button element op door te zoeken naar ID | Maak de click function
-document.getElementById('toggleButton').addEventListener('click', function () {
-    // Haalt de text element op door te zoeken naar de ID
-    const verborgenText = document.getElementById('text');
-    if (verborgenText.style.display === 'none') {
-        // Zet de diplay styling naar block, dus het wordt getoond
-        verborgenText.style.display = 'block';
-        // Past de button content aan
-        this.textContent = 'Zie Minder';
-    } else {
-        // Zet de diplay styling naar none, dus er wordt niet getoond
-        verborgenText.style.display = 'none';
-        // Behoud de button content
-        this.textContent = 'Zie Meer';
+document.querySelector('.toggleButton').addEventListener('click', function () {
+    // Haalt de text element en classes op
+    let verborgenText = document.querySelector('.verborgen, .showing-more');
+    
+    // Toggle de zichtbaarheid van de tekst door classes te wisselen
+    if (verborgenText.classList.contains('verborgen')) {
+        // Verwijdert de class verborgen
+        verborgenText.classList.remove('verborgen');
+        // Voegt de class showing-more toe en maakt de text zichtbaar
+        verborgenText.classList.add('showing-more');
+    } else if (verborgenText.classList.contains('showing-more')) {
+        // Verwijdert de class showing-more
+        verborgenText.classList.remove('showing-more');
+        // Voegt de class verborgen toe, dus de text verdwijnt      
+        verborgenText.classList.add('verborgen');
     }
 });

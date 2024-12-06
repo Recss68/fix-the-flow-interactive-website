@@ -18,15 +18,19 @@ body {
     height: 80vh;  
 }
 
-#toggleButton {
+.toggleButton {
     background-color: goldenrod;
     color: white;
     width: 150px;
     height: 50px;
 }
 
-#text {
+.verborgen {
     display: none;
+}
+
+.showing-more {
+    display: block;
 }
 
 
