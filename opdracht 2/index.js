@@ -10,8 +10,8 @@ document.querySelector('.toggleButton').addEventListener('click', function () {
 
         // Verandert de knoptekst
         if (verborgenText.classList.contains('showing-more')) {
-            toggleButton.textContent = 'Zie Minder';
+            toggleButton.innerHTML = 'Zie Minder &uarr;';
         } else {
-            toggleButton.textContent = 'Zie Meer';
+            toggleButton.innerHTML = 'Zie Meer &darr;';
         }
 });
