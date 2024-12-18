@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins Font */
+
+
+:root{
+    --main-background: #292929;
+    --main-font-color: #fff;
+}
+body {
+    opacity: 95%;
+    font-family: 'Poppins';
+    overflow: hidden;
+    background-color: grey;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 100vh;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+nav.active {
+    bottom: 0;
+}
+
+.buttons ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 60px; 
+    justify-items: center; 
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.buttons li {
+    font-size: 20px; 
+    color: var(--main-font-color); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.buttons img {
+    width: 120px; 
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 2px; 
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.buttons img:hover {
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+.close-btn {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
