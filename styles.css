@@ -49,7 +49,7 @@ nav.active {
     margin: 0;
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    gap: 60px; 
+    gap: 35px; 
     justify-items: center; 
     @media (min-width: 1024px) {
         display: flex;
@@ -58,7 +58,7 @@ nav.active {
 }
 
 .buttons li {
-    font-size: 20px; 
+    font-size: 15px; 
     color: var(--main-font-color); 
     display: flex;
     flex-direction: column; 
@@ -66,8 +66,8 @@ nav.active {
 }
 
 .buttons img {
-    width: 120px; 
-    height: 120px;
+    width: 100px; 
+    height: 100px;
     margin-top: 20px;
     margin-bottom: 2px; 
     box-sizing: border-box;
