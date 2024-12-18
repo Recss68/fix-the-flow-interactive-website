@@ -6,6 +6,7 @@
     --main-background: #292929;
     --main-font-color: #fff;
 }
+
 body {
     opacity: 95%;
     font-family: 'Poppins';
@@ -70,11 +71,11 @@ nav.active {
     margin-top: 20px;
     margin-bottom: 2px; 
     box-sizing: border-box;
-    transition: border 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out, border-radius 0.1s ease-in-out;
 }
 
 .buttons img:hover {
-    border: 5px solid white;
+    border: 5px solid var(--main-font-color);
     border-radius: 25px;
 }
 
