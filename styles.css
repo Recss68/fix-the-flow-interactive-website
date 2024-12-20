@@ -18,10 +18,11 @@ body {
     background: none;
     border: none;
     position: fixed;
-    top: 50%;
+    top: 95%;
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
+    
 }
 
 nav {
@@ -58,7 +59,7 @@ nav.active {
 }
 
 .buttons li {
-    font-size: 15px; 
+    font-size: 20px; 
     color: var(--main-font-color); 
     display: flex;
     flex-direction: column; 
@@ -66,8 +67,8 @@ nav.active {
 }
 
 .buttons img {
-    width: 100px; 
-    height: 100px;
+    width: 120px; 
+    height: 120px;
     margin-top: 20px;
     margin-bottom: 2px; 
     box-sizing: border-box;
